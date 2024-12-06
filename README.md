@@ -3,7 +3,6 @@
 Author: Manuel Álvarez Herrera  
 Supervisor: José Antonio García Souto 
 
-
 Year: 2024
 
 ## Abstract
