@@ -1,0 +1,155 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid f4a8765f-e65a-417c-b689-23215a49697d)
+
+  (paper "A4")
+
+  (title_block
+    (title "PCB Acondicionamiento Suelo")
+    (date "2023-06-10")
+    (company "UC3M")
+    (comment 1 "Hojas jerárquicas del acondicionamiento de los sensores de suelo.")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 64.77 40.64) (size 26.67 33.02) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 0abdcf83-660f-425a-9378-cde612146263)
+    (property "Sheet name" "alimentacion" (id 0) (at 64.77 39.9284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "alimentacion.kicad_sch" (id 1) (at 64.77 74.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 118.11 40.64) (size 25.4 34.29) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2e38b6d0-5f8a-4de6-9840-d4ea1e156309)
+    (property "Sheet name" "conversores" (id 0) (at 118.11 39.9284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "conversores.kicad_sch" (id 1) (at 118.11 75.5146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 157.48 41.91) (size 26.67 33.02) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2ec114fc-24d4-4a72-b9aa-4551a3f0971a)
+    (property "Sheet name" "pines_alimentacion_sensores" (id 0) (at 157.48 41.1984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "pines_alimentacion_sensores.kicad_sch" (id 1) (at 157.48 75.5146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 116.84 86.36) (size 26.67 35.56) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4dbe4445-0509-4b33-8691-c9be56e5c28c)
+    (property "Sheet name" "acondicionamiento_moisture" (id 0) (at 116.84 85.6484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "acondicionamiento_moisture.kicad_sch" (id 1) (at 116.84 122.5046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 64.77 86.36) (size 26.67 34.29) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 6fb832a9-97a7-4fe7-8ef6-8ad5589be7d8)
+    (property "Sheet name" "pines_IO_sensores" (id 0) (at 64.77 85.6484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "pines_IO_sensores.kicad_sch" (id 1) (at 64.77 121.2346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/6fb832a9-97a7-4fe7-8ef6-8ad5589be7d8" (page "4"))
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c" (page "5"))
+    (path "/2ec114fc-24d4-4a72-b9aa-4551a3f0971a" (page "5"))
+    (path "/0abdcf83-660f-425a-9378-cde612146263" (page "6"))
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309" (page "6"))
+  )
+
+  (symbol_instances
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/3c506733-d271-475d-8352-dc4f0667d663"
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/b4f1252f-5d0d-4edf-848f-d21c7bbc0cdb"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/96872203-71e8-4540-8050-ec6342f8a5dc"
+      (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/0abdcf83-660f-425a-9378-cde612146263/d5019a3b-1c80-4559-be21-d349cf3e62a2"
+      (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/becc5a68-ae09-43ef-94d0-bf0dc1ead507"
+      (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/b76bd4d8-11ce-46d6-bd7f-3795318552e0"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/d384948f-de2d-4b14-9c18-0800414b00be"
+      (reference "C1") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/8c8e7dea-79e8-4e21-9cfe-d151717ec894"
+      (reference "C2") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/831f68d3-6c4e-4d75-a719-56f2c2f749ee"
+      (reference "C3") (unit 1) (value "CL21B103KBANNNC") (footprint "CAPC2012X140N")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/39a9e9b4-0150-4ede-bf37-ba90dd4480cb"
+      (reference "C4") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/a3f29bde-ad16-455c-aa0e-d295ba275824"
+      (reference "C5") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/dea4a7f1-af4e-451d-bafc-dd485d945d61"
+      (reference "C6") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/2e1c05eb-929a-42a6-9355-fadcbd62304a"
+      (reference "C7") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/6fb832a9-97a7-4fe7-8ef6-8ad5589be7d8/2e812659-0ef8-4f24-be20-8067e0fbcfd4"
+      (reference "J1") (unit 1) (value "Conn_01x03") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    )
+    (path "/2ec114fc-24d4-4a72-b9aa-4551a3f0971a/2a5aa665-b23d-4da5-bc88-3d788201474b"
+      (reference "J2") (unit 1) (value "Conn_01x04") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+    )
+    (path "/0abdcf83-660f-425a-9378-cde612146263/029ed3e8-dbe9-4b8b-b0fd-9a4aaf2197f9"
+      (reference "J3") (unit 1) (value "Conn_01x02") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/668d931b-8c15-4b79-b5bb-8b1595a55ade"
+      (reference "PS1") (unit 1) (value "R-739.0P") (footprint "CONV_R-739.0P")
+    )
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/3aadcd47-3b1a-42b3-8989-ca3fe4c68af1"
+      (reference "R1") (unit 1) (value "LT5400BCMS8E-6#PBF") (footprint "SOP65P490X110-9N")
+    )
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/fac022d4-57a1-4156-b853-8cf97be1f4e3"
+      (reference "R2") (unit 1) (value "LT5400BCMS8E-6#PBF") (footprint "SOP65P490X110-9N")
+    )
+    (path "/4dbe4445-0509-4b33-8691-c9be56e5c28c/d9c8187e-b0ae-48f6-9fcc-d0473528e2ab"
+      (reference "U1") (unit 1) (value "OP292GSZ-REEL") (footprint "SOIC127P600X175-8N")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/03a0d000-082e-47ff-8e67-80069edc0eff"
+      (reference "U2") (unit 1) (value "FDV303N") (footprint "SOT23")
+    )
+    (path "/2e38b6d0-5f8a-4de6-9840-d4ea1e156309/a5f8d364-c971-4f69-96cf-f0e58a573343"
+      (reference "VR1") (unit 1) (value "LM1085ISX-5.0/NOPB") (footprint "TO254P1435X464-4N")
+    )
+  )
+)
