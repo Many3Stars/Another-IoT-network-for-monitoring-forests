@@ -1,0 +1,102 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid d515fc0a-6c40-43a2-8c84-c418eb8f464c)
+
+  (paper "A4")
+
+  (title_block
+    (title "PCB_Alimentacion")
+    (date "2023-06-17")
+    (company "UC3M")
+    (comment 1 "Hojas jerárquicas para la PCB que alimenta el Arduino y la Raspberry.")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 152.4 78.74) (size 36.83 36.83) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 30b62c19-9a72-4eb4-8d11-551a4a9a7854)
+    (property "Sheet name" "Placas" (id 0) (at 152.4 78.0284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Placas.kicad_sch" (id 1) (at 152.4 116.1546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 38.1 80.01) (size 31.75 35.56) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 32874f48-fc80-4ced-ba10-c0c6ae572d54)
+    (property "Sheet name" "Fuente de alimentacion" (id 0) (at 38.1 79.2984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Fuente_de_alimentacion.kicad_sch" (id 1) (at 38.1 116.1546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 92.71 78.74) (size 36.83 36.83) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 907da74b-6e15-4b01-b930-ec102c3a0758)
+    (property "Sheet name" "Conversores" (id 0) (at 92.71 78.0284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Conversores.kicad_sch" (id 1) (at 92.71 116.1546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/32874f48-fc80-4ced-ba10-c0c6ae572d54" (page "2"))
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758" (page "3"))
+    (path "/30b62c19-9a72-4eb4-8d11-551a4a9a7854" (page "4"))
+  )
+
+  (symbol_instances
+    (path "/32874f48-fc80-4ced-ba10-c0c6ae572d54/0b28a2dc-3caf-425f-a171-b8cc475f4636"
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758/27dc090f-718d-4ffc-8c16-1758d03691fe"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758/af0b3a7a-5750-43b5-bffb-1045ba2ac94b"
+      (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/30b62c19-9a72-4eb4-8d11-551a4a9a7854/6876a590-b5ed-4d54-bfe1-b1fb9593a4d1"
+      (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/30b62c19-9a72-4eb4-8d11-551a4a9a7854/bc46a321-0781-4f77-b382-9600ce585ae5"
+      (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758/1bdfcaae-a2b8-4c90-a730-56b698175c24"
+      (reference "C1") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758/30565fae-3b8a-4341-8bcd-2636d216010c"
+      (reference "C2") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758/b5070830-0f98-43df-93db-5a141618f9e1"
+      (reference "C3") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758/80b2c87b-b7c8-4a81-9266-07f18102cc9f"
+      (reference "C4") (unit 1) (value "EEUFC1H150") (footprint "CAPPRD200W50D500H1100")
+    )
+    (path "/32874f48-fc80-4ced-ba10-c0c6ae572d54/7c3263bd-5d7d-4de7-a38c-f59b82a4df91"
+      (reference "J1") (unit 1) (value "Conn_01x02") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/30b62c19-9a72-4eb4-8d11-551a4a9a7854/3e3eb574-8393-477d-a77c-d9ffcc234c3d"
+      (reference "J2") (unit 1) (value "Conn_01x04") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
+    )
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758/0ddc7143-de64-4777-98db-cfa2153dabb2"
+      (reference "PS1") (unit 1) (value "K7805-3AR3") (footprint "CONV_K7805-3AR3")
+    )
+    (path "/907da74b-6e15-4b01-b930-ec102c3a0758/24e1d844-5e5c-454f-933d-1cb5e40bb3b8"
+      (reference "U1") (unit 1) (value "TSR_1-2490") (footprint "Converter_DCDC:Converter_DCDC_TRACO_TSR-1_THT")
+    )
+  )
+)
