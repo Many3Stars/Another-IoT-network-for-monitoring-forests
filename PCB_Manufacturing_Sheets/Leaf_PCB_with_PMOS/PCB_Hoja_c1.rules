@@ -1,0 +1,80 @@
+
+(rules PCB PCB_Hoja_c1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 5036)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "AUX+_TEMPERATURE" GND "AUX+_HUMIDITY" 9V 0.25V "IN_TEMPERATURE" "IN_HUMIDITY" "OUT_TEMPERATURE"
+    "OUT_HUMIDITY" "Net-(R1-Pad1)" "Net-(R1-Pad3)" "AUX-_TEMPERATURE" "AUX-_HUMIDITY" "unconnected-(R4-Pad3)" "unconnected-(R4-Pad4)" "unconnected-(R4-Pad5)"
+    "unconnected-(R4-Pad6)" "Net-(R4-Pad7)" "Net-(C6-Pad1)" PWR "Net-(C12-PadP)" "Net-(C15-Pad1)" "PWR_HUM" CTR
+    "PWR_TEMP" "Net-(PS1-Pad1)" "unconnected-(PS1-Pad12)" "Net-(PS2-Pad1)" "unconnected-(PS2-Pad12)" "Net-(R5-Pad2)" 0.25 "unconnected-(U3-Pad7)"
+    "unconnected-(U3-Pad6)" "unconnected-(U3-Pad5)" "unconnected-(U5-Pad7)" "unconnected-(U5-Pad6)" "unconnected-(U5-Pad5)" "unconnected-(VR1-Pad4)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
