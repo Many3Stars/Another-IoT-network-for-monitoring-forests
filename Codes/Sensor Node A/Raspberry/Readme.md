@@ -1,4 +1,4 @@
- # Raspberry Pi Code for Sensor Node A
+ # Raspberry
 
 This folder contains the scripts and configurations used by the Raspberry Pi in **Sensor Node A**. The Raspberry Pi plays a crucial role in managing data communication between the Arduino and the IoT network.
 
